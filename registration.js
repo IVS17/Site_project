@@ -8,18 +8,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Регистрация</title>
-</head>
-<body  class="text-center" bgcolor="#000000" >
 
-<div class="dropdown">
-  <button class="dropbtn">Menu <img src="pictures/user_pict.png" height="40px" align="right"> </button>
-  <div class="dropdown-content">
-    <a href="user_page.html">Account</a>
-    <a href="main_page.html">MainPage</a>
-  </div>
-</div>
+</head>
+<body  class="text-center" bgcolor="#000000"  align=" center">
 
 <main class="form-signin">
+
 
 
     <form >

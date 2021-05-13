@@ -57,6 +57,10 @@ font-size: 200%;
 
 
 /*stule of meny*/
+
+.form-signin {
+    margin: center;
+}
 .dropbtn {
     background:linear-gradient(to top right, #006400 52%, #AAFAAA 100%); 
     padding: 16px;
