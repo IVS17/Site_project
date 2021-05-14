@@ -6,8 +6,7 @@
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body bgcolor="#000000" background="pictures/back.jpg" >
-    <script src="script.js"></script>
+  <body bgcolor="#000000" >
 
 <div class="dropdown">
   <button class="dropbtn">Menu <img src="pictures/user_pict.png" height="40px" align="right"> </button>
@@ -28,6 +27,24 @@ cellpadding="37">
 </th>
 </tr>
 </table>
-
+<div class="card">
+	
+</div>
   </body>
 </html>
+
+const mysql = require('mysql')
+const connection = mysql.createConnection({
+	host: '',
+	port: 8000,
+})
+
+connection.connect(function(err){
+	if (err) throw err
+	console.log('Conected')
+	connection.query("CREATE DATABASE test", 
+		function(err, result){
+			if (err) throw err
+			console.log("DB created! ")
+		})
+})

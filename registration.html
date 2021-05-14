@@ -22,35 +22,22 @@
 <main class="form-signin">
 
 
-    <form >
-        <h1 class="h3 mb-3 fw-normal" >Регистрация</h1>
-        <p>
-        <label for="inputEmail" class="visually-hidden">Email address</label>
-        <input type="email" id="inputEmail" class="form-control mb-2" placeholder="Почта" required="" autofocus="">
-        </p>
-        <p>
-        <label for="inputSurname" class="visually-hidden">Surname</label>
-        <input type="text" id="inputSurname" class="form-control mb-2" placeholder="Фамилия" required="">
-        </p>
-        <p>
-
-        <label for="inputLetter" class="visually-hidden">ClassLetter</label>
-        <input type="text" id="inputLetter" class="form-control mb-2" placeholder="Буква класса" required="">
-        </p>
-        <p>
-
-        <label for="inputPassword" class="visually-hidden">Password</label>
-        <input type="password" id="inputPassword" class="form-control mb-2" placeholder="Пароль" required="">
-</p>
-        <p>
-
-        <label for="inputPasswordRepeate" class="visually-hidden">repeat password</label>
-        <input type="password" id="inputPasswordRepeate" class="form-control mb-2" placeholder="Повторение пароля" required="">
-
-        <div class="checkbox mb-3">
-        </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Создать аккаунт</button>
-    </form>
+    <form action="save_user.php" method="post">
+    <!--**** save_user.php - это адрес обработчика.  То есть, после нажатия на кнопку "Зарегистрироваться", данные из полей  отправятся на страничку save_user.php методом "post" ***** -->
+<p>
+    <label>Ваш логин:<br></label>
+    <input name="login" type="text" size="15" maxlength="15">
+    </p>
+<!--**** В текстовое поле (name="login" type="text") пользователь вводит свой логин ***** -->
+<p>
+    <label>Ваш пароль:<br></label>
+    <input name="password" type="password" size="15" maxlength="15">
+    </p>
+<!--**** В поле для паролей (name="password" type="password") пользователь вводит свой пароль ***** --> 
+<p>
+    <input type="submit" name="submit" value="Зарегистрироваться">
+<!--**** Кнопочка (type="submit") отправляет данные на страничку save_user.php ***** --> 
+</p></form>
 </main>
 
 
